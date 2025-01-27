@@ -1,0 +1,44 @@
+.container {
+    background-color: #3e4c59;
+    background-size: cover;
+}
+
+.para1 {
+    color: yellow;
+    font-size: 30px;
+}
+
+.head1 {
+    color: white;
+    font-size: 50px;
+}
+
+.card {
+    background-color: #323f4b;
+    padding:10px;
+    width:450px;
+}
+.image{
+    height:400px;
+    width:450px
+}
+
+
+.para2 {
+    color: grey;
+    font-size: 20px;
+}
+
+.head2 {
+    color: white;
+    font-size: 40px;
+}
+
+.para3 {
+    color: grey;
+    font-size: 30px;
+}
+
+.icon-para {
+    color: yellow;
+}

@@ -1,0 +1,48 @@
+
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png");
+    background-size: cover;
+    height: 300vh;
+    margin-top: 5px;
+}
+
+.card1 {
+    padding: 20px;
+}
+
+.head1 {
+    color: white;
+    margin: 25px;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.but {
+    margin: 25px;
+    color: #ff8348;
+    width: 130px;
+    height: 50px;
+    border-width: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.para {
+    color: white;
+    margin: 25px;
+    font-family: "Roboto";
+}
+
+.head2 {
+    color: white;
+    font-size: 28px;
+    margin: 25px;
+    font-family: "Roboto";
+}
+
+.image {
+    margin: 20px;
+    width: 200px;
+}

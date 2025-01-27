@@ -1,0 +1,37 @@
+
+.main-heading {
+    font-weight: bold;
+    color: #1f2933;
+}
+
+.card {
+    margin: 40px;
+}
+
+.image {
+    height: 200px;
+    width: 400px;
+}
+
+.head {
+    color: #959ead;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.para {
+    color: #323f4b;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: #1754a1;
+    color: white;
+}
+
+.icon-para {
+    color: #1754a1;
+    font-weight: bold;
+    margin: 10px;
+}
