@@ -1,48 +1,99 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
 
 .bg-container {
     background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/orange-color-bg.png");
     background-size: cover;
-    height: 300vh;
-    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .card1 {
-    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Title & Button */
 .head1 {
     color: white;
-    margin: 25px;
+    margin: 25px 10px 25px 0;
     font-weight: bold;
-    font-family: "Roboto";
+    font-size: 32px;
 }
 
 .but {
-    margin: 25px;
+    background-color: white;
     color: #ff8348;
+    font-weight: bold;
     width: 130px;
     height: 50px;
-    border-width: 0px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
+.but:hover {
+    background-color: #ff8348;
+    color: white;
+}
+
+/* Paragraph */
 .para {
     color: white;
-    margin: 25px;
-    font-family: "Roboto";
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Similar Movies Section */
+.card2 {
+    margin-top: 40px;
 }
 
 .head2 {
     color: white;
     font-size: 28px;
-    margin: 25px;
-    font-family: "Roboto";
+    margin-bottom: 20px;
 }
 
-.image {
-    margin: 20px;
-    width: 200px;
+.similar-movies-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    background-color: white;
+    border-radius: 12px;
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin:20px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

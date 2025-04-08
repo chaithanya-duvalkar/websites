@@ -1,44 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #1a2533; /* Deep slate blue */
+}
+
 .container {
-    background-color: #3e4c59;
-    background-size: cover;
+    background-color: #1a2533;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
 .para1 {
-    color: yellow;
-    font-size: 30px;
+    color: #d4af37; /* Slightly darker golden yellow */
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .head1 {
-    color: white;
-    font-size: 50px;
+    color: #cbd5e1; /* Darkened light slate gray */
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 36px;
 }
 
 .card {
-    background-color: #323f4b;
-    padding:10px;
-    width:450px;
-}
-.image{
-    height:400px;
-    width:450px
+    background-color: #0b111d; /* Even deeper navy */
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 2px solid #344054; /* Dark border */
+}
 
 .para2 {
-    color: grey;
-    font-size: 20px;
+    color: #94a3b8; /* Muted gray-blue */
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-transform: uppercase;
 }
 
 .head2 {
-    color: white;
-    font-size: 40px;
+    color: #94a3b8; /* Slightly darker slate tone */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+
 .para3 {
-    color: grey;
-    font-size: 30px;
+    color: #64748b; /* Dark muted slate */
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 14px;
 }
 
 .icon-para {
-    color: yellow;
+    color: #d4af37; /* Deeper yellow for elegance */
+    font-weight
 }
