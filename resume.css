@@ -1,0 +1,46 @@
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .poster-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .poster-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .poster-content {
+    padding: 20px;
+  }
+  
+  .poster-content h2 {
+    font-size: 24px;
+    color: #222;
+  }
+  
+  .tagline {
+    color: #3b82f6;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .poster-content p, li {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  

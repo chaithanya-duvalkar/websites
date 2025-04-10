@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speak Up Poster</title>
+  <link rel="stylesheet" href="Poster.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Club Logo -->
+  <div class="club-logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUygH9rrhqcGBG3L5VpkqbybRhvhcLG49cA&s" alt="Club Logo" />
+  </div>
+
+  <!-- Left Section -->
+  <div class="left-section">
+    <!-- Club Branding Card -->
+    <div class="club-branding">
+      <h2>SpeakUp</h2>
+      <p><strong>SpeakUp</strong> is the beating heart of eloquence on campus. We nurture voices, amplify confidence, and turn thoughts into thunder. From speeches to debates and improv, our club celebrates fearless expression and creative spontaneity.</p>
+      <blockquote>“Words have power. Speak to inspire, lead, and ignite minds.”</blockquote>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-box">
+      <h3>⏳ Countdown</h3>
+      <p id="countdown">Loading...</p>
+    </div>
+
+    <!-- Download Poster -->
+    <a class="download-btn" href="poster.jpg" download>⬇️ Download Poster</a>
+  </div>
+
+  <!-- Right Section -->
+  <div class="poster-wrapper">
+    <!-- Main Poster Content (Blended) -->
+    <div class="main-content">
+      <h1>🎤 Speak Up!</h1>
+      <p class="tagline">Break the Silence. Embrace the Spotlight. ✨</p>
+      <p class="description">
+        Unleash the power of your voice at our exciting <strong>Public Speaking & JAM Session</strong>. Whether you're a confident speaker or a curious beginner, this is your moment to shine and grow. 🌟
+      </p>
+      <ul class="details">
+        <li><span>📅</span><strong>Date:</strong> April 10, 2025</li>
+        <li><span>📍</span><strong>Venue:</strong> JSS Campus Auditorium</li>
+        <li><span>🎙️</span><strong>Activities:</strong> JAM | Improv | Stage Talk</li>
+      </ul>
+      <a href="#" class="register-btn">🎟️ Register Now</a>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://your-registration-link.com&size=100x100" alt="QR Code for registration"/>
+      </div>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-card-container">
+      <div class="info-card">
+        <h3>🎯 Purpose</h3>
+        <p>Boost your confidence and master impromptu speaking skills in a supportive, fun environment.</p>
+      </div>
+      <div class="info-card">
+        <h3>💡 Who Can Join?</h3>
+        <p>Open to all students who want to overcome stage fear or polish their public speaking skills.</p>
+      </div>
+      <div class="info-card">
+        <h3>🏆 Prizes & Recognition</h3>
+        <p>Winners and enthusiastic speakers will receive exciting prizes and certificates of appreciation!</p>
+      </div>
+    </div>
+    <!-- Countdown Script -->
+  <script>
+    const eventDate = new Date("April 10, 2025 00:00:00").getTime();
+    const countdownElement = document.getElementById("countdown");
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "🎉 It's time!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    };
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>

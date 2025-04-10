@@ -1,0 +1,251 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/799/316/non_2x/announce-advertisement-poster-background-illustration-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+/* Background overlay */
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.15);   /*#00000024*/
+  z-index: 0;
+}
+
+/* Club Logo */
+.club-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+.club-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Left Section */
+.left-section {
+  position: absolute;
+  top: 100px; /* Below the logo */
+  left: 20px; /* Same left alignment as logo */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+/* Club Branding */
+.club-branding {
+  background-color: rgba(226, 227, 202, 0.559);
+  padding: 18px;
+  max-width: 260px;
+  margin-top:20px;
+  height:350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.club-branding h2 {
+  font-size: 22px;
+  color: #ec144a;
+  margin-bottom: 10px;
+}
+.club-branding p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.club-branding blockquote {
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 13px;
+  color: #555;
+  border-left: 3px solid #ff6b81;
+  padding-left: 10px;
+}
+
+/* Countdown Box */
+.countdown-box {
+  background-color: rgba(226, 227, 202, 0.88);
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+.countdown-box h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #ec144a;
+}
+#countdown {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  background: #ff6b81;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.download-btn:hover {
+  background: #e9576c;
+}
+
+
+/* Poster Wrapper */
+.poster-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+/* Main Poster Content (Blended with background) */
+.main-content {
+  max-width: 820px;
+  padding: 10px 15px;
+  color: #1a1a1a;
+  backdrop-filter: none;
+}
+
+.main-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #ec144a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.tagline {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #e0c516;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.details {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.details li {
+  margin-bottom: 8px;
+}
+.details li span {
+  display: inline-block;
+  width: 24px;
+}
+
+/* Register Button */
+.register-btn {
+  display: inline-block;
+  background: #ff6b81;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-bottom: 12px;
+}
+.register-btn:hover {
+  background: #e9576c;
+}
+
+/* QR Code */
+.qr-code img {
+  height: 80px;
+  width: 80px;
+  border-radius: 6px;
+}
+
+/* Info Cards */
+.info-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap:50px;
+}
+
+.info-card {
+  width: 240px;
+  padding: 15px 18px;
+  background-color: rgba(226, 227, 202, 0.88); /*#e2e3cae0*/
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  color: #1a1a1a;
+  gap:30px;
+}
+
+.info-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #ff6b81;
+}
+
+.info-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .poster-wrapper {
+    align-items: center;
+  }
+
+  .main-content, .info-card {
+    max-width: 90%;
+  }
+
+  .info-card-container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr-code img {
+    height: 70px;
+    width: 70px;
+  }
+}
