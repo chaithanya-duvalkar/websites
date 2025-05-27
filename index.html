@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Developer Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    span.red {
+      color: red;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .btn{
+        background-color:red;
+        color:white;
+        font-size:14px;
+        font-weight:500px;
+        border-radius:20px;
+        width:150px;
+        height:50px;
+    }
+
+    /* Hero Section */
+    #home {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .hero-text p {
+      color: #ccc;
+      margin-top: 1rem;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Other Sections */
+    section {
+      padding: 60px 20px;
+      min-height: 60vh;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      color: #ccc;
+    }
+
+    #about, #services, #contact {
+      background: #111;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #home {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text, .hero-image {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><strong><span class="red">Port</span>folio</strong></div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <button class="btn">Get Started</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-text">
+      <h1><span class="red">Award-Winning</span> <br>Frontend Developer</h1>
+    </div>
+    <div class="hero-image">
+      <img src="https://th.bing.com/th/id/OIP.aih3JTkNPrHYX3HYvPcPyQHaEJ?w=331&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Frontend Developer">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2><span class="red">About</span> Me</h2>
+    <p>Creative<span class="red"> Developer</span></p>
+    <p></p>
+    <br>
+    <button class="btn">Download CV</button>
+     </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our <span class="red">Services</span></h2>
+    <ul>
+      <li><span class="red">Web Development</span> – Responsive and accessible websites</li>
+      <li><span class="red">UI/UX Design</span> – Modern, user-friendly interfaces</li>
+      <li><span class="red">SEO Optimization</span> – Boost your site’s visibility</li>
+      <li><span class="red">Consulting</span> – Personalized advice for your brand</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2><span class="red">Contact</span> Us</h2>
+    <p>Email: <span class="red">contact@example.com</span></p>
+    <p>Phone: <span class="red">+123-456-7890</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <span class="red">My Website</span>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
