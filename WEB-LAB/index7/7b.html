@@ -1,0 +1,98 @@
+<!-- 7b) Create HTML Page that contains form with fields Name, Email, Mobile No, Gender, Favorite Color and a bu on. 
+Write a JavaScript code to validate all the fields when the bu on is clicked, later combine and display the informa on 
+in textbox.  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Info Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #eef;
+      padding: 20px;
+    }
+    .form-box {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 400px;
+      margin: auto;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    .gender {
+      margin: 10px 0;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+    }
+    #output {
+      margin-top: 15px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Student Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+
+    <label>Email:</label>
+    <input type="text" id="email">
+
+    <label>Mobile No:</label>
+    <input type="text" id="mobile">
+
+    <label>Gender:</label>
+    <div class="gender">
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <label>Favorite Color:</label>
+    <input type="color" id="color">
+
+    <button onclick="showInfo()">Submit</button>
+
+    <textarea id="output" readonly placeholder="Details will appear here..."></textarea>
+  </div>
+
+  <script>
+    function showInfo() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let mobile = document.getElementById("mobile").value;
+      let color = document.getElementById("color").value;
+
+      let gender = "";
+      let genders = document.getElementsByName("gender");
+      for (let g of genders) {
+        if (g.checked) {
+          gender = g.value;
+        }
+      }
+
+      if (name === "" || email === "" || mobile === "" || gender === "") {
+        alert("Please fill all fields");
+        return;
+      }
+
+      let info = "Name: " + name + "\nEmail: " + email + "\nMobile: " + mobile +
+                 "\nGender: " + gender + "\nColor: " + color;
+      document.getElementById("output").value = info;
+    }
+  </script>
+
+</body>
+</html>

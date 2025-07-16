@@ -1,0 +1,84 @@
+<!-- 6. Design a web page of your ins tute (Ref: Sl.No. 1) with an a rac ve background color, text color, an Image, font 
+etc. Use External, Internal, and Inline CSS to format the page.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Institute - Home</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+
+    <!-- Internal CSS (optional small styles) -->
+    <style>
+        h1 {
+            color: navy;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <h1>Excellence Institute of Technology</h1>
+    <p class="welcome">Welcome to the official website of our institute</p>
+
+    <!-- Institute Image with inline CSS -->
+    <div style="text-align: center;">
+        <img src="https://via.placeholder.com/600x200" alt="Institute Building"
+             style="border: 2px solid #003366; border-radius: 8px;">
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <h2 class="green">About Us</h2> <!-- class used for color -->
+        <p>We are committed to excellence in education and innovation. Our campus offers modern infrastructure and industry-aligned programs.</p>
+    </div>
+
+    <!-- Programs Section -->
+    <div class="section">
+        <h2 class="red">Programs Offered</h2>
+        <ul>
+            <li>B.E. Computer Science</li>
+            <li>B.E. Electronics and Communication</li>
+            <li>B.E. Electrical Engineering</li>
+        </ul>
+
+        <div class="program-cards">
+            <div class="program-box">
+                <h3>Computer Science</h3>
+                <p>Focus on programming, AI, and software engineering.</p>
+            </div>
+            <div class="program-box">
+                <h3>Electronics</h3>
+                <p>Explore embedded systems, VLSI, and communication tech.</p>
+            </div>
+            <div class="program-box">
+                <h3>Electrical</h3>
+                <p>Study power systems, control theory, and robotics.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@eit.edu</p>
+        <p>Phone: +91 12345 67890</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Excellence Institute of Technology
+    </footer>
+
+</body>
+</html>
+
+
