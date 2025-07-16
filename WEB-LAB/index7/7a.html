@@ -23,7 +23,7 @@
     }
 
     input, select, button {
-      width: 100%;
+      width: 90%;
       padding: 10px;
       margin: 10px 0;
       font-size: 16px;
@@ -57,6 +57,32 @@
   </div>
 
   <script>
+  function calculate(){
+    let a=parseFloat(document.getElementById("num1").value);
+    let b=parseFloat(document.getElementById("num2").value);
+    let op=document.getElementById("operator").value;
+    let result;
+
+    if (isNaN(a) || isNaN(b)){
+      res="Please enter the two numbers.";
+    }
+    else{
+      if(op==='+') result=a+b; 
+      else if(op==="-") result=a-b;
+      else if(op==="*") result=a*b;
+      else if(op==="/")
+      {
+        if(b===0) result="Cannot divide by Zero.";
+        else
+            result=a/b;
+      }
+    }
+    document.getElementById("result").innerText="Result: " +result;
+  }
+</script>
+</body></html>
+
+  <!-- <script>
     function calculate() {
       let a = parseFloat(document.getElementById("num1").value);
       let b = parseFloat(document.getElementById("num2").value);
@@ -80,4 +106,6 @@
   </script>
 
 </body>
-</html>
+</html> -->
+
+
