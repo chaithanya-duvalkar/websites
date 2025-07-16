@@ -18,48 +18,42 @@ background. Using table tag and addi onal features like spanning rows, columns a
             background-position: center top;
             background-attachment: fixed;
         }
-
-        header, footer {
+        header{
             background-color: #003366;
+            /* height:100px; */
             color: white;
             text-align: center;
             padding: 10px;
         }
-
         nav {
             background-color: #004080;
+            height:20px;
             text-align: center;
             padding: 10px;
         }
-
         nav a {
             color: white;
             margin: 0 20px;
             text-decoration: none;
             font-weight: bold;
         }
-
         section {
             margin: 20px auto;
             width: 90%;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
         }
-
         th, td {
             border: 1px solid #999;
             padding: 10px;
             text-align: center;
         }
-
         h2 {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 10px;
         }
-
         ul, ol {
             margin-left: 50px;
             font-size: 16px;
@@ -67,21 +61,18 @@ background. Using table tag and addi onal features like spanning rows, columns a
     </style>
 </head>
 <body>
-
     <!-- Header -->
     <header>
-        <h1>UNIVERSITY OF TECHNOLOGY</h1>
+        <h1>JSS SCIENCE & TECHNOLOGY UNIVERSITY</h1>
         <h2>Department of Computer Science</h2>
-        <h3>Academic Year 2023-2024</h3>
+        <h3>Academic Year 2024-2025</h3>
     </header>
-
     <!-- Navigation -->
     <nav>
         <a href="#timetable">Timetable</a>
         <a href="#courses">Courses</a>
         <a href="#faculty">Faculty</a>
     </nav>
-
     <!-- Timetable -->
     <section id="timetable">
         <h2>Class Timetable</h2>
@@ -96,16 +87,16 @@ background. Using table tag and addi onal features like spanning rows, columns a
             </tr>
             <tr>
                 <td>9:00 - 10:00</td>
-                <td rowspan="2">CS101<br>Dr. Smith (DS)</td>
-                <td>MATH201<br>Dr. Johnson (JJ)</td>
-                <td rowspan="2">CS101<br>Dr. Smith (DS)</td>
-                <td>MATH201<br>Dr. Johnson (JJ)</td>
+                <td rowspan="2">CS101<br>Dr. Chai (CS)</td>
+                <td>MATH201<br>Dr. Chavi (SS)</td>
+                <td rowspan="2">CS101<br>Dr. Chai (CS)</td>
+                <td>MATH201<br>Dr. Chavi (SS)</td>
                 <td>-</td>
             </tr>
             <tr>
                 <td>10:00 - 11:00</td>
-                <td>PHY101<br>Dr. Wilson (WW)</td>
-                <td>PHY101<br>Dr. Wilson (WW)</td>
+                <td>PHY101<br>Dr. Bhai (VMV)</td>
+                <td>PHY101<br>Dr. Bhai (VMV)</td>
                 <td>-</td>
             </tr>
             <tr>
@@ -118,7 +109,6 @@ background. Using table tag and addi onal features like spanning rows, columns a
             </tr>
         </table>
     </section>
-
     <!-- Courses -->
     <section id="courses">
         <h2>Course Information</h2>
@@ -129,23 +119,15 @@ background. Using table tag and addi onal features like spanning rows, columns a
             <li><strong>PHY101</strong>: Physics for Computer Science (4 Credits)</li>
         </ul>
     </section>
-
     <!-- Faculty -->
     <section id="faculty">
         <h2>Faculty Information</h2>
         <ol>
-            <li>Dr. Smith (<strong>DS</strong>) – Computer Science – Room 301</li>
-            <li>Dr. Johnson (<strong>JJ</strong>) – Mathematics – Room 205</li>
+            <li>Dr. Chai (<strong>CS</strong>) – Computer Science – Room 301</li>
+            <li>Dr. Chavi (<strong>SS</strong>) – Mathematics – Room 205</li>
             <li>Prof. Brown (<strong>BB</strong>) – Computer Science – Room 302</li>
-            <li>Dr. Wilson (<strong>WW</strong>) – Physics – Room 401</li>
+            <li>Dr. Bhai (<strong>VMV</strong>) – Physics – Room 401</li>
         </ol>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>University of Technology | Department of Computer Science</p>
-        <p>Contact: +1 (555) 123-4567 | Email: cs.department@university.edu</p>
-    </footer>
-
 </body>
 </html>
