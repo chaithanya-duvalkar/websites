@@ -52,18 +52,17 @@ also store into a text file.  -->
         // Validate if the information is not empty 
         if (!empty($info)) { 
             // Open a text file to store the information 
-$file = fopen("form.txt", "a"); // "a" mode for appending 
-// Write the information to the text file 
-fwrite($file, $info . "\n"); 
-// Close the file 
-fclose($file); 
-// Display a success message in an alert 
-echo "<script>alert('Information submitted successfully!\\n" . 
-htmlspecialchars($info) . "');</script>"; 
-} else { 
-// Display an error message in an alert if information is empty 
-echo "<script>alert('Please enter some information!');</script>"; 
-} 
+            $file = fopen("form.txt", "a"); // "a" mode for appending 
+            // Write the information to the text file 
+            fwrite($file, $info . "\n"); 
+            // Close the file 
+            fclose($file); 
+            // Display a success message in an alert 
+            echo "<script>alert('Information submitted successfully!\\n".htmlspecialchars($info) . "');</script>"; 
+            } else { 
+            // Display an error message in an alert if information is empty 
+            echo "<script>alert('Please enter some information!');</script>"; 
+        } 
 } 
 ?> 
 </body> 
